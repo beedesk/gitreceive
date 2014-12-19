@@ -157,7 +157,7 @@ main() {
         echo "ERROR: Arbitrary ssh prohibited!"
         exit 1
       fi
-      local repo_path="$GITHOME/$RECEIVE_REPO"
+      local repo_path="$GITHOME/repo/$RECEIVE_REPO"
       ensure_bare_repo "$repo_path"
       ensure_prereceive_hook "$repo_path" "$GITHOME" "$SELF"
       cd "$GITHOME"
